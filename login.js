@@ -8,7 +8,11 @@
     const inputPassword = password.value;
     console.log(inputPassword)
 
-    if ( inputEmail !== 'support@bestflashfile.com' ){
+ if ( inputEmail === '' || inputPassword === '' ){
+        alert('input email & password')
+    }
+
+   else if ( inputEmail !== 'support@bestflashfile.com' ){
         alert('invalid email')
     }
 else if ( inputPassword !== '12345678'){
